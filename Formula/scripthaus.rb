@@ -9,6 +9,7 @@ class Scripthaus < Formula
 
   def install
     system "go", "build", "-trimpath", "-o", "bin/scripthaus", "cmd/main.go"
+    bin.install "scripthaus"
   end
 
   test do
