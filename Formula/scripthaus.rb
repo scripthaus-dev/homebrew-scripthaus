@@ -8,10 +8,7 @@ class Scripthaus < Formula
   depends_on "go" => :build
 
   def install
-    system "pwd"
-    system "ls", "-l"
-    system "find", "."
-    system "go", "build", "-trimpath", "-o", "bin/scripthaus", "cmd/main.go"
+    system "go", "build", "-trimpath", "-o", "scripthaus", "cmd/main.go"
     bin.install "scripthaus"
   end
 
