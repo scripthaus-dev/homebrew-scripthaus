@@ -1,8 +1,8 @@
 class Scripthaus < Formula
-  desc "ScriptHaus"
+  desc "command line tool that helps organize your scripts and bash one-liners into self-documenting markdown files"
   homepage "https://www.scripthaus.dev"
   url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "4d355370adbd9f7bc56729fb7111211e0e1a72e72269184142a8997ee671e552"
+  sha256 "12e715dc23c908ffb66059fd1bdd9ace60cdcddbefb832a9d13fbdf1240e90bc"
   license "MPL-2.0"
 
   depends_on "go" => :build
