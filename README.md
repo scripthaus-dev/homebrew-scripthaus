@@ -1,11 +1,15 @@
-# Scripthaus-dev Scripthaus
+# ScriptHaus Homebrew Repo
 
-## How do I install these formulae?
+## How do I install ScriptHaus with homebrew?
 
-`brew install scripthaus-dev/scripthaus/<formula>`
+```
+brew install scripthaus-dev/scripthaus/scripthaus
+```
 
-Or `brew tap scripthaus-dev/scripthaus` and then `brew install <formula>`.
+OR
 
-## Documentation
+```
+brew tap scripthaus-dev/scripthaus
+brew install scripthaus
+```
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
