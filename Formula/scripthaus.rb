@@ -1,21 +1,29 @@
 class Scripthaus < Formula
   desc "Command-line tool that helps organize your scripts and bash one-liners"
   homepage "https://www.scripthaus.dev"
-  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "12e715dc23c908ffb66059fd1bdd9ace60cdcddbefb832a9d13fbdf1240e90bc"
+  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "a9d18f6567ea16931e563cc52e456d2305a8b4f22ad89654e25d739ed01c61d8"
   license "MPL-2.0"
-
-  bottle do
-    root_url "https://github.com/scripthaus-dev/homebrew-scripthaus/releases/download/scripthaus-0.1.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "a8c102db882d20c76ee0d33d31d1f24b085d6ad01ab1ba48a0ceecabc9bd7852"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8475840fd137041771e3291213567a60ed2f7b8d83ff482bc1d89e2d0b5de532"
-  end
 
   depends_on "go" => :build
 
   def install
     system "go", "build", "-trimpath", "-o", "scripthaus", "cmd/main.go"
     bin.install "scripthaus"
+  end
+
+  def caveats
+    <<~EOS
+      [^scripthaus] is OpenSource and licensed under the MPLv2
+
+      Resources:
+      * Homepage - https://www.scripthaus.dev
+      * Source Code - https://github.com/scripthaus-dev/scripthaus
+      * Discord - https://discord.gg/XfvZ334gwU
+
+      If you have questions, want to report a bug, or request a new feature
+      please create a GitHub issue or post in Discord.
+    EOS
   end
 
   test do
