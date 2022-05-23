@@ -1,7 +1,7 @@
 class Scripthaus < Formula
   desc "Command-line tool that helps organize your scripts and bash one-liners"
   homepage "https://www.scripthaus.dev"
-  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.1.0.tar.gz"
+  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "a9d18f6567ea16931e563cc52e456d2305a8b4f22ad89654e25d739ed01c61d8"
   license "MPL-2.0"
 
