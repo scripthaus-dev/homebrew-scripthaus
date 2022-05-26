@@ -5,6 +5,12 @@ class Scripthaus < Formula
   sha256 "5a07b34e5a3cee8f8c4c34affcd35809edd208a0edc998f142df3e4b8139213a"
   license "MPL-2.0"
 
+  bottle do
+    root_url "https://github.com/scripthaus-dev/homebrew-scripthaus/releases/download/scripthaus-0.3.1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "c1dbf1d3307b0af017724cfd44062d6e0bc127080d239554276f9f6abc2e4ef9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "115d3768eae8464781856bb77f371e5e9e5255e179d1c1ee30d397fa8e1294e6"
+  end
+
   depends_on "go" => :build
 
   def install
