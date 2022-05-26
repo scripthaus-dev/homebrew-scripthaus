@@ -27,6 +27,6 @@ class Scripthaus < Formula
   end
 
   test do
-    assert_match "[^scripthaus] v0.3.0", shell_output("#{bin}/scripthaus version")
+    assert_match "[^scripthaus] v0.3.1", shell_output("#{bin}/scripthaus version")
   end
 end
