@@ -1,15 +1,9 @@
 class Scripthaus < Formula
   desc "Command-line tool that helps organize your scripts and bash one-liners"
   homepage "https://www.scripthaus.dev"
-  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "5a07b34e5a3cee8f8c4c34affcd35809edd208a0edc998f142df3e4b8139213a"
+  url "https://github.com/scripthaus-dev/scripthaus/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "619d54fd207aeba535ceccc289f49b65283648234b57b0e872794d1f229523b8"
   license "MPL-2.0"
-
-  bottle do
-    root_url "https://github.com/scripthaus-dev/homebrew-scripthaus/releases/download/scripthaus-0.3.1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "c1dbf1d3307b0af017724cfd44062d6e0bc127080d239554276f9f6abc2e4ef9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "115d3768eae8464781856bb77f371e5e9e5255e179d1c1ee30d397fa8e1294e6"
-  end
 
   depends_on "go" => :build
 
@@ -33,6 +27,6 @@ class Scripthaus < Formula
   end
 
   test do
-    assert_match "[^scripthaus] v0.3.1", shell_output("#{bin}/scripthaus version")
+    assert_match "[^scripthaus] v0.4.0", shell_output("#{bin}/scripthaus version")
   end
 end
